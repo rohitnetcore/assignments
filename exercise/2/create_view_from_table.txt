@@ -1,0 +1,4 @@
+
+CREATE VIEW `sites_view` AS SELECT `sapid`,`hostname`,`loopback`,`macaddress` FROM `sites`;
+
+SELECT * from `sites_view` 

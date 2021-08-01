@@ -1,0 +1,32 @@
+
+Get all sites
+method: GET
+http://localhost:3000/api/v1/sites
+
+Get site using sapid
+method: GET
+sapid=351134329467
+http://localhost:3000/api/v1/sites/351134329467
+
+Add site 
+method: POST
+curl --location --request POST 'http://localhost:3000/api/v1/sites' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'macaddress=test mac' \
+--data-urlencode 'hostname=test host' \
+--data-urlencode 'loopback=test loop' \
+--data-urlencode 'sapid=351134329467'
+
+Update site 
+method: PUT
+sapid=351134329467 (where sapid=351134329467)
+curl --location --request PUT 'http://localhost:3000/api/v1/sites/351134329467' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'macaddress=test mac' \
+--data-urlencode 'hostname=test host' \
+--data-urlencode 'loopback=test loop'
+
+Delete site 
+method: PUT
+sapid=351134329467 (where sapid=351134329467)
+curl --location --request DELETE 'http://localhost:3000/api/v1/sites/351134329467'

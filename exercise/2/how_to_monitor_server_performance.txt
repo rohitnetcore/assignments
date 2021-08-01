@@ -1,0 +1,16 @@
+
+1. command - "top" 
+
+	Gives CPU usage, Memory usage, Swap Memory, Cache Size, Buffer Size, Process PID, User
+
+	It also shows high memory and cpu utilization of a running processess.
+
+2. Sort by CPU Utilisation 
+	
+	Press (Shift+P) to sort processes as per CPU utilization.
+
+3. Use kill command to terminate processes consuming more CPU
+
+4. Find top running processes by highest memory and CPU usage
+
+	ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
